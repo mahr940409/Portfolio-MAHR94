@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="logo" href="/img/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio - MAHR94</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">MAHR94</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#sobremi">SOBRE MI</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#curriculum">CURRICULUM</a></li>
+                    <li><a href="#portfolio">PROTFOLIO</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>                    
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="/img/perfil.png" alt="">
+            </div>
+            <h1>MANUEL HERNANDEZ</h1>
+            <h2>Desarrollador WEB - Gestor documental</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=61558568662712" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/developer.mahr94/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@DeveloperMAHR94" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/manuel-alejandro-hernandez-rodriguez-552222302/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/mahr940409" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+     <!-- SECCION SOBRE MI -->
+     <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Manuel Hernandez</span> Como desarrollador web y tecnólogo en gestión documental, mi pasión es fusionar la innovación tecnológica con las mejores prácticas en archivo y gestión de información. Me comprometo a mantenerme actualizado constantemente, explorando nuevas tecnologías y adaptándome a las últimas normativas archivísticas. Mi objetivo es no solo crear soluciones digitales efectivas, sino también asegurarme de que estén alineadas con los estándares más recientes y las tendencias emergentes en la industria. Además, estoy siempre en búsqueda de oportunidades para expandir mis habilidades y conocimientos, ya sea a través de capacitaciones, cursos especializados o colaboraciones con colegas expertos en el campo.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            09-04-1994
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +57 318-205-1224
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            mahr.94@outlook.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            - PROXIMAMENTE
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Calle 49 # 24 - 24 Soledad, Atl - Colombia
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Desarrollador WEB - Gestor Documental</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-brands fa-readme"></i>
+                            <span>LEER</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>CODE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-pen"></i>
+                            <span>ESCRIBIR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>MOTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button id="downloadButton">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>React JS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>71%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>VisualStudioCode</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Normatividad Archivistica</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Tecnologo en Gestion Documental</h4>
+                        <span class="casa">SENA</span>
+                        <span class="fecha">2015</span>
+                        <p>Como tecnólogo en gestión documental en Colombia, me dedico a integrar eficientemente las herramientas tecnológicas con las mejores prácticas en gestión de documentos. Mi compromiso radica en mantenerme actualizado constantemente, explorando nuevas tecnologías y adaptándome a las últimas normativas archivísticas del país. Mi meta es desarrollar soluciones innovadoras que no solo optimicen la gestión de la información, sino que también cumplan con los requisitos legales y regulatorios locales.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollador Web</h4>
+                        <span class="casa">ACADEMLO</span>
+                        <span class="fecha">2024 - En formacion</span>
+                        <p>Como desarrollador web, mi objetivo es mejorar constantemente mis habilidades en el uso de los lenguajes de programación. Me comprometo a dedicar tiempo al estudio continuo y al seguimiento de las últimas tendencias tecnológicas. Creo en la importancia de la práctica constante y la experimentación para enfrentar desafíos con confianza. Estoy abierto a recibir retroalimentación constructiva y aprender de mis errores para crecer profesionalmente. Mi pasión por el desarrollo web impulsa mi búsqueda constante de mejora y excelencia en un campo en constante evolución.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Responsive Web Design</h4>
+                        <span class="casa">FreeCodeCamp</span>
+                        <span class="fecha">2024</span>
+                        <p>En un programa de 300 horas de práctica intensiva, conseguí la certificación en Diseño Web Responsivo. Me sumergí en técnicas avanzadas para crear sitios web adaptables y accesibles en diversos dispositivos. Esta experiencia fortaleció mis habilidades técnicas y mi enfoque creativo en el diseño web. Estoy emocionado por aplicar este conocimiento en proyectos futuros.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Responsive Web Design</h4>
+                        <span class="casa">FreeCodeCamp</span>
+                        <span class="fecha">2024</span>
+                        <p>Durante un periodo de 300 horas de prácticas en FreeCodeCamp, me sumergí en el mundo del desarrollo web y obtuve una certificación como Desarrollador Web Responsivo. Durante este tiempo, completé cinco proyectos, cada uno cumpliendo con las especificaciones requeridas. Estas prácticas fueron fundamentales para consolidar mis habilidades y adquirir experiencia práctica en el campo del desarrollo web.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrolador Web</h4>
+                        <span class="casa">ACADEMLO</span>
+                        <span class="fecha">2024</span>
+                        <p>En Academlo, he participado en proyectos de certificación y obtuve un certificado de aprobación en fundamentos. Actualmente, estoy inmerso en el módulo de React JS y mi objetivo es fortalecer mi lógica de programación a través de la práctica continua. Estoy comprometido a seguir mejorando mis habilidades y aplicar los conocimientos adquiridos en proyectos desafiantes que me permitan crecer como desarrollador web.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Gestor Documental</h4>
+                        <span class="casa">Experiencia en Gestion Documental</span>
+                        <span class="fecha">2014 - 2024</span>
+                        <p>Durante casi una década, me dediqué apasionadamente al campo de la gestión documental y la archivística. Esta profesión me brindó innumerables experiencias y aprendizajes que han enriquecido mi vida de muchas maneras. Ahora, mi camino se orienta hacia el desarrollo web, donde deseo combinar mi experiencia en gestión documental con la creación de software. Esta transición representa una emocionante oportunidad para fusionar dos mundos apasionantes y encontrar nuevas formas de optimizar procesos y crear soluciones innovadoras en el ámbito digital. Estoy entusiasmado por llevar mi bagaje profesional a un nuevo contexto y seguir creciendo como desarrollador web.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://number-romanconverter.netlify.app" target="_blank">
+                    <img src="/img/P1.png" alt="">
+                    <div class="overlay">
+                        <h3>Convertidor de Numeros Romanos</h3>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://fortune-cookies-mahr94.netlify.app" target="_blank">
+                    <img src="/img/P2.png" alt="">
+                    <div class="overlay">
+                        <h3>Galleta de la Fortuna</h3>
+                        <p>Proyecto React</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://weather-app-mahr94.netlify.app" target="_blank">
+                    <img src="/img/P3.png" alt="">
+                    <div class="overlay">
+                        <h3>Clima APP</h3>
+                        <p>Proyecto React</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://rick-and-morty-mahr94.netlify.app" target="_blank">
+                    <img src="/img/P4.png" alt="">
+                    <div class="overlay">
+                        <h3>APP Rick and Morty</h3>
+                        <p>Proyecto React</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://pokedex-mahr94.netlify.app" target="_blank">
+                    <img src="/img/P5.png" alt="">
+                    <div class="overlay">
+                        <h3>Pokedex</h3>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                
+                   <div class="col">
+                        <input type="text" placeholder="Tú Nombre">
+                        <input type="text" placeholder="Número telefónico">
+                        <input type="text" placeholder="Dirección de correo">
+                        <input type="text" placeholder="Tema">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea> 
+                        <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                        </button>
+                    </div>
+                
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="/img/Ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Colombia, Soledad - Atl Cll 49 # 24 - 21
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +57 318-205-1224 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: mahr.94@outlook.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=61558568662712" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/developer.mahr94/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@DeveloperMAHR94" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/manuel-alejandro-hernandez-rodriguez-552222302/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/mahr940409" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
