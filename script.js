@@ -1,54 +1,80 @@
 let menuVisible = false;
-//Función que oculta o muestra el menu
-function mostrarOcultarMenu(){
-    if(menuVisible){
-        document.getElementById("nav").classList ="";
+
+function mostrarOcultarMenu() {
+    const nav = document.getElementById("nav");
+    if (nav) {
+        if (menuVisible) {
+            nav.classList.remove("responsive");
+            menuVisible = false;
+        } else {
+            nav.classList.add("responsive");
+            menuVisible = true;
+        }
+    }
+}
+
+function seleccionar() {
+    const nav = document.getElementById("nav");
+    if (nav) {
+        nav.classList.remove("responsive");
         menuVisible = false;
-    }else{
-        document.getElementById("nav").classList ="responsive";
-        menuVisible = true;
     }
 }
 
-function seleccionar(){
-    //oculto el menu una vez que selecciono una opcion
-    document.getElementById("nav").classList = "";
-    menuVisible = false;
-}
-//Funcion que aplica las animaciones de las habilidades
-function efectoHabilidades(){
-    var skills = document.getElementById("skills");
-    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if(distancia_skills >= 300){
-        let habilidades = document.getElementsByClassName("progreso");
-        habilidades[0].classList.add("javascript");
-        habilidades[1].classList.add("htmlcss");
-        habilidades[2].classList.add("photoshop");
-        habilidades[3].classList.add("wordpress");
-        habilidades[4].classList.add("drupal");
-        habilidades[5].classList.add("comunicacion");
-        habilidades[6].classList.add("trabajo");
-        habilidades[7].classList.add("creatividad");
-        habilidades[8].classList.add("dedicacion");
-        habilidades[9].classList.add("proyect");
+function efectoHabilidades() {
+    const skills = document.getElementById("skills");
+    if (skills) {
+        const distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
+        if (distancia_skills >= 300) {
+            const habilidades = document.getElementsByClassName("progreso");
+            for (let i = 0; i < habilidades.length; i++) {
+                switch (i) {
+                    case 0:
+                        habilidades[i].classList.add("javascript");
+                        break;
+                    case 1:
+                        habilidades[i].classList.add("htmlcss");
+                        break;
+                    case 2:
+                        habilidades[i].classList.add("photoshop");
+                        break;
+                    case 3:
+                        habilidades[i].classList.add("wordpress");
+                        break;
+                    case 4:
+                        habilidades[i].classList.add("drupal");
+                        break;
+                    case 5:
+                        habilidades[i].classList.add("comunicacion");
+                        break;
+                    case 6:
+                        habilidades[i].classList.add("trabajo");
+                        break;
+                    case 7:
+                        habilidades[i].classList.add("creatividad");
+                        break;
+                    case 8:
+                        habilidades[i].classList.add("dedicacion");
+                        break;
+                    case 9:
+                        habilidades[i].classList.add("proyect");
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
     }
 }
 
-
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
-window.onscroll = function(){
-    efectoHabilidades();
-} 
+window.addEventListener("scroll", efectoHabilidades);
 
 document.getElementById("downloadButton").addEventListener("click", function() {
-        
-        var pdfUrl = "CV/HV- Manuel Hernandez.pdf";
-        
-        var link = document.createElement("a");
-        link.href = pdfUrl;
-        link.download = "MAHR-CV.pdf";
-        
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    });
+    const pdfUrl = "CV/HV- Manuel Hernandez.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "MAHR-CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
